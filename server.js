@@ -9,6 +9,7 @@ connectDB();
 //routes
 
 app.use('/api/files', require('./routes/file'));
+app.use('/files', require('./routes/show'));
 
 
 
