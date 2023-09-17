@@ -6,6 +6,12 @@ const connectDB = require("./config/db")
 connectDB();
 
 
+//template
+
+app.set('views', path.join(__dirname, '/views'));
+app.set('view engine', 'ejs');
+
+
 //routes
 
 app.use('/api/files', require('./routes/file'));
