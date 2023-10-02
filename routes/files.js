@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const multer = require('multer');
 const path = require('path');
-const File = require('../models/file');
+const File = require('../models/file.js');
 const { v4: uuidv4 } = require('uuid');
 
 let storage = multer.diskStorage({
@@ -45,13 +45,13 @@ router.post('/send', async (req, res) => {
     file.receiver = emailTo;
     const response = await file.save();
     // send mail
-    const sendMail = require('../services/mailService');
+    const sendMail = require('../services/mailService.js');
     sendMail({
       from: emailFrom,
       to: emailTo,
       subject: 'inShare file sharing',
       text: `${emailFrom} shared a file with you.`,
-      html: require('../services/emailTemplate')({
+      html: require('../services/emailTemplate.js')({
                 emailFrom, 
                 downloadLink: `${process.env.APP_BASE_URL}/files/${file.uuid}?source=email` ,
                 size: parseInt(file.size/1000) + ' KB',
