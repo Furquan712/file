@@ -4,13 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Download | InShare - File Sharing Made Easy</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 20px auto;
+        }
+
+        .download {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download__icon {
+            max-width: 100px;
+            margin: 0 auto 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .download__meta {
+            margin: 20px 0;
+        }
+
+        .download__meta h4 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .download__meta small {
+            color: #666;
+        }
+
+        .send-btn-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .send-btn-container a:hover {
+            background-color: #0056b3;
+        }
+
+        /* GitHub corner icon style can remain the same */
+
+        /* Add a media query to adjust styles for smaller screens */
+        @media (max-width: 768px) {
+            .download {
+                padding: 10px;
+            }
+
+            .download__icon {
+                max-width: 80px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .download__meta h4 {
+                font-size: 18px;
+            }
+
+            .download__meta small {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <img src="/img/logo.png" alt="Inshare logo" class="logo">
+    <img src="https://api.logo.com/api/v2/images?logo=logo_4349562b-9efd-407e-a2d5-04d8b4d152d4&u=2023-10-14T23%3A05%3A32.138Z&margins=0&format=webp&quality=30&width=200&height=200&background=transparent&fit=contain" alt=" logo" class="logo">
 
     <section class="download">
         <img class="download__icon" src="/img/download-sd.svg" alt="inshare-download">
@@ -29,8 +114,8 @@
         <% } %>
     </section>
 
-    <!-- github fork button -->
-    <a href="https://github.com/codersgyan" target="_blank" class="github-corner" aria-label="View source on GitHub">
+    <!-- GitHub fork button -->
+    <a href="https://github.com/Furquan712" target="_blank" class="github-corner" aria-label="View source on GitHub">
         <svg width="80" height="80" viewbox="0 0 250 250"
             style="fill:#131315c9; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
