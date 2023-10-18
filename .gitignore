@@ -3,4 +3,4 @@ node_modules/
 npm-debug.log
 
 # Ignore .env files that contain sensitive environment variables
-.env
+.env/
